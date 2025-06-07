@@ -967,7 +967,7 @@ card.style.display = 'none';
   <script>
 async function loadDailyMenu() {
   // Tu hoja publicada convertida a CSV
-  const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS0iZl7OX2DuUdq3gpDzArrQgxk07jbGHNUTBSt0JU7UHzS8cGTYxNlEkfIl2gbnmKl0qm47zJzPlG9/pubhtml?gid=0&single=true';
+ const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS0iZl7OX2DuUdq3gpDzArrQgxk07jbGHNUTBSt0JU7UHzS8cGTYxNlEkfIl2gbnmKl0qm47zJzPlG9/pub?output=csv';
   try {
     const res = await fetch(sheetUrl);
     if (!res.ok) throw new Error('Error al cargar el menú');
