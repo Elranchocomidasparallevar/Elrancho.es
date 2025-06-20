@@ -25,6 +25,11 @@
       }
     }
   </script>
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <style>
     :where([class^="ri-"])::before {
       content: "\f3c2";
@@ -76,7 +81,7 @@
 </head>
 <body class="bg-[#FFFAF0]">
 <!-- Header -->
-<header class="bg-white shadow-md">
+<header class="bg-white shadow-md z-50 sticky top-0">
 <div class="container mx-auto px-4 py-3">
 <div class="flex justify-between items-center">
 <!-- Logo y Navegación -->
@@ -143,20 +148,78 @@
 </nav>
 </header>
 <!-- Hero Section -->
-<section id="inicio" class="relative h-[500px] md:h-[600px] overflow-hidden" style="background-image: url('https://static.readdy.ai/image/e807f5ae4491ddd29d257a0cfd0abef5/ded3c05a99a5e0dca40f50ecb28361c4.png'); background-size: cover; background-position: center;">
-<div class="absolute inset-0 bg-black bg-opacity-50"></div>
-<div class="container mx-auto px-4 h-full flex items-center relative z-10">
-<div class="w-full md:w-1/2 text-white">
-<h2 class="text-4xl md:text-5xl font-bold mb-4">Auténtica Cocina Tradicional</h2>
-<p class="text-xl mb-6 font-satisfy">Desde 2006, cocinamos comida casera de verdad, hecha por nosotros cada día.</p>
-<a href="#menu" class="bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap inline-block">
-  Ver Menú Completo
-</a>
-</div>
-</div>
-<div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-<i class="ri-arrow-down-line text-2xl"></i>
-</div>
+<section id="inicio" class="relative h-[500px] md:h-[600px] overflow-hidden">
+    <div class="swiper mySwiper h-full">
+        <div class="swiper-wrapper h-full">
+
+            <div class="swiper-slide relative h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-50" style="background-image: url('2.png'); background-size: cover; background-position: center;"></div>
+                <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+                    <div class="w-full md:w-1/2 text-white">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-4">Auténtica Cocina Tradicional</h2>
+                        <p class="text-xl mb-6 font-satisfy">Desde 2006, cocinamos comida casera de verdad, hecha por nosotros cada día.</p>
+                        <a href="#menu" class="bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap inline-block">
+                            Ver Menú Completo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide relative h-full">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('12.png');"></div>
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                 <div class="container mx-auto px-4 h-full flex items-center relative z-10 text-white">
+                    <div class="w-full text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold">¡Platos Frescos Cada Día!</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide relative h-full">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('10.png');"></div>
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div class="container mx-auto px-4 h-full flex items-center relative z-10 text-white">
+                    <div class="w-full text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold">Sabores Que Enamoran</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide relative h-full">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('9.png');"></div>
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div class="container mx-auto px-4 h-full flex items-center relative z-10 text-white">
+                    <div class="w-full text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold">Tradición en Cada Bocado</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide relative h-full">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('13.png');"></div>
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div class="container mx-auto px-4 h-full flex items-center relative z-10 text-white">
+                    <div class="w-full text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold">Calidad y Frescura</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide relative h-full">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('8.png');"></div>
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div class="container mx-auto px-4 h-full flex items-center relative z-10 text-white">
+                    <div class="w-full text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold">Hecho con Amor</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white animate-bounce z-20">
+        <i class="ri-arrow-down-line text-2xl"></i>
+    </div>
 </section>
 <!-- Platos del Día - Pizarra Digital -->
 <section id="diario" class="py-16 bg-[#F5F5DC]">
@@ -342,7 +405,7 @@
 </div> <!-- Cierra product-card -->
       <!-- Bocadillos -->
       <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card hidden" data-category="bocadillos">
-<img src="https://readdy.ai/api/search-image?query=A%20beautiful%20display%20of%20various%20Spanish%20sandwiches%20%28bocadillos%29%20arranged%20on%20a%20rustic%20wooden%20table.%20The%20scene%20shows%20both%20hot%20and%20cold%20sandwiches%20with%20fresh%20ingredients%2C%20meats%2C%20and%20vegetables.%20Professional%20food%20photography%20with%20warm%20lighting%20highlighting%20the%20textures%20of%20the%20bread%20and%20fillings&width=1200&height=400&seq=boc_hero&orientation=landscape" alt="Nuestros Bocadillos" class="w-full h-64 object-cover object-top">
+<img src="6.png" alt="Nuestros Bocadillos" class="w-full h-64 object-cover object-top">
 <div class="p-6">
   <div class="grid md:grid-cols-2 gap-12">
 
@@ -584,7 +647,7 @@
 </div>
 <!-- Pizzas -->
 <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="pizzas">
-  <img src="Pizza.png" class="w-full h-64 object-cover object-top">
+  <img src="1.png" class="w-full h-64 object-cover object-top">
   <div class="p-6">
     <h3 class="text-2xl font-semibold text-gray-800 mb-4">Nuestras Pizzas</h3>
     <div class="flex flex-wrap items-center justify-end gap-4 mb-4 text-gray-700 text-xs md:text-sm">
@@ -655,7 +718,7 @@
 </div>
  <!-- Hamburguesas -->
       <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card hidden" data-category="hamburguesas">
-<img src="https://readdy.ai/api/search-image?query=A%20variety%20of%20gourmet%20burgers%20with%20different%20toppings%2C%20both%20beef%20and%20chicken%20options%2C%20displayed%20on%20a%20rustic%20wooden%20table.%20The%20scene%20shows%20fresh%20ingredients%2C%20melted%20cheese%2C%20and%20crisp%20vegetables.%20Professional%20food%20photography%20with%20warm%20lighting&width=1200&height=400&seq=ham_hero&orientation=landscape" alt="Nuestras Hamburguesas" class="w-full h-64 object-cover object-top">
+<img src="a.png" alt="Nuestras Hamburguesas" class="w-full h-64 object-cover object-top">
 <div class="p-6">
 <h3 class="text-2xl font-semibold text-gray-800 mb-4">Hamburguesas</h3>
 <p class="text-gray-600 mb-6">Carne de Ternera o de Pollo</p>
@@ -736,7 +799,7 @@
         </div>
   <!-- Kebabs -->
       <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card hidden" data-category="kebabs">
-<img src="https://readdy.ai/api/search-image?query=A%20professional%20food%20photography%20collage%20showing%20two%20types%20of%20kebabs%20side%20by%20side.%20On%20the%20left%2C%20a%20perfectly%20wrapped%20durum%20kebab%20with%20grilled%20meat%20and%20fresh%20vegetables.%20On%20the%20right%2C%20an%20open%20pita%20bread%20kebab%20filled%20with%20meat%2C%20fresh%20vegetables%20and%20sauce.%20Both%20presented%20on%20rustic%20wooden%20boards%20with%20garnishes.%20The%20lighting%20is%20warm%20and%20inviting%2C%20highlighting%20the%20textures%20and%20colors%20of%20the%20ingredients&width=1200&height=400&seq=keb_hero&orientation=landscape" alt="Nuestros Kebabs" class="w-full h-64 object-cover object-top">
+<img src="7.png" alt="Nuestros Kebabs" class="w-full h-64 object-cover object-top">
 <div class="p-6">
 <h3 class="text-2xl font-semibold text-gray-800 mb-4">Kebab</h3>
 <p class="text-gray-600 mb-6">Ingredientes: Lechuga, tomate, maíz, salsa kebab</p>
@@ -1039,5 +1102,49 @@ document.addEventListener('DOMContentLoaded', () => {
       showCategory('pizzas');
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true,
+            },
+            speed: 500,
+        });
+
+        // Código para el menú móvil
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Script para la fecha de actualización del menú diario
+        const updateDateElement = document.getElementById('update-date');
+        if (updateDateElement) {
+            const today = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = today.toLocaleDateString('es-ES', options);
+            updateDateElement.textContent = `Actualizado: ${formattedDate}`;
+        }
+    });
+</script>
 </body>
 </html>
